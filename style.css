@@ -63,19 +63,17 @@ button {
 }
 
 input[type="text"] {
-  padding: 15px; /* Increase padding for input field */
-  width: calc(100% - 32px); /* Adjust width to accommodate padding */
+  padding: 15px;
+  width: calc(100% - 32px);
 }
 
 button {
-  padding: 12px 20px; /* Adjust button padding */
+  padding: 12px 20px;
 }
 
 button:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-
-/* Center the button */
 .form-input button {
   display: block;
   margin: 0 auto;
@@ -144,23 +142,22 @@ button:hover {
   animation: fadeIn 0.5s ease-in-out;
 }
 
+.message.other-message {
+  text-align: left;
+}
+
+.message.my-message {
+  text-align: right;
+}
+
+.message.update-message {
+  text-align: center;
+}
+
 .message.other-message .username {
   color: black;
 }
 
 .message.my-message .message-content {
   color: black;
-}
-
-/* Center user joined message */
-.message.update-message {
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .join-screen,
-  .chat-screen {
-    width: 80%;
-    max-width: 90%;
-  }
 }
